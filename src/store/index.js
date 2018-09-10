@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
 // 以下这些可以不要
 // import mutations from './mutations'
@@ -7,9 +7,9 @@ import Vuex from 'vuex'
 // import getters from './getters'
 // import * as types from './mutation-types'
 
-import Demo from './modules/demo'
+import Demo from './modules/demo';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   // getters,
@@ -18,4 +18,4 @@ export default new Vuex.Store({
     Demo
   }
   // mutations
-})
+});

@@ -1,6 +1,6 @@
-import Vue from 'vue'
-import { Component } from 'vue-property-decorator'
-import template from './myAside.vue'
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
+import template from './myAside.vue';
 
 @Component({
   name: 'myAside',
@@ -66,5 +66,5 @@ export default class MyAside extends Vue {
         }
       ]
     }
-  ]
+  ];
 }

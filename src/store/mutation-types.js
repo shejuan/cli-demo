@@ -1,1 +1,1 @@
-export const DEMO = 'DEMO' // 查询职位
+export const DEMO = 'DEMO'; // 查询职位

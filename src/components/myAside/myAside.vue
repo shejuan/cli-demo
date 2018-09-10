@@ -14,4 +14,5 @@
     </el-menu>
   </el-aside>
 </template>
-<style src="./myAside.scss" lang="scss" scoped></style>
+<style src="./myAside.scss" lang="scss" scoped>
+</style>

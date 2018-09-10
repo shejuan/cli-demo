@@ -5,4 +5,5 @@
     <router-view></router-view>
   </el-main>
 </template>
-<style src="./myMain.scss" lang="scss" scoped></style>
+<style src="./myMain.scss" lang="scss" scoped>
+</style>

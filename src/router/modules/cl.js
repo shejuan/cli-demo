@@ -3,17 +3,22 @@
 
 // import jingli from '@/pages/cl/jingli'
 // import manage from '@/pages/cl/manage'
-import home from '@/pages/home'
+import home from '@/pages/home';
 
 // require.ensure()
-function getView (viewName, title) {
+function getView(viewName, title) {
   return (resolve, reject) => {
-    require.ensure([], (require) => {
-      let modules = require(`@/pages/cl/${viewName}`)
-      modules.default.options.metaInfo = { title }
-      resolve(modules)
-    }, reject, 'home')
-  }
+    require.ensure(
+      [],
+      require => {
+        let modules = require(`@/pages/cl/${viewName}`);
+        modules.default.options.metaInfo = { title };
+        resolve(modules);
+      },
+      reject,
+      'home'
+    );
+  };
 }
 
 let routes = {
@@ -39,11 +44,11 @@ let routes = {
       }
     }
   ]
-}
+};
 
-routes.children.forEach((v) => {
+routes.children.forEach(v => {
   if (!v.redirect && !v.component) {
-    v.component = getView(v.name, v.meta.title)
+    v.component = getView(v.name, v.meta.title);
   }
-})
-export default routes
+});
+export default routes;

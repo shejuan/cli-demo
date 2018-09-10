@@ -5,4 +5,5 @@
   </div>
 </template>
 
-<style src="./jingli.scss" lang="scss" scoped></style>
+<style src="./jingli.scss" lang="scss" scoped>
+</style>
