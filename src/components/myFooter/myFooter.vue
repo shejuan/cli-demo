@@ -1,8 +1,20 @@
 <template>
-  <el-footer>
-    我是footer
-  </el-footer>
+  <div class="my-footer">
+    <el-footer>
+      我是footer
+    </el-footer>
+  </div>
 </template>
 
-<style src="./myFooter.scss" lang="scss" scoped>
+<style  lang="scss" scoped>
+// .my-footer /deep/ .el-footer {
+//   background-color: red;
+// }
+.my-footer {
+  /deep/ {
+    .el-footer {
+      background-color: yellow!important;
+    }
+  }
+}
 </style>

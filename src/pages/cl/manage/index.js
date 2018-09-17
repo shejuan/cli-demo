@@ -12,4 +12,9 @@ export default class Manage extends Vue {
     this.data = this.$store.getters.getName;
     console.log(this.data, 'this.data的值');
   }
+
+  myInput(event) {
+    console.log(event, '---')
+  }
+  
 }

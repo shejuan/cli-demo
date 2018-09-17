@@ -1,0 +1,10 @@
+// .my-footer {
+//   /deep/ {
+//     .el-footer {
+//       background-color: yellow!important;
+//     }
+//   }
+// }
+.my-footer /deep/ .el-footer {
+  background-color: yellow;
+}
